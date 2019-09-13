@@ -51,4 +51,4 @@ production:
   <<: *default
   database: webapp_production
   username: webapp
-  password: <%= ENV['ORMUCOAPP_DATABASE_PASSWORD'] %>
+  password: <%= ENV['WEBAPP_DATABASE_PASSWORD'] %>

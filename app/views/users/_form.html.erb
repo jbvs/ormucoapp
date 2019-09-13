@@ -24,6 +24,7 @@
   <div class="field">
     <%= form.label "Favorite Color" %>
     <%= form.select :color_id, Color.all.collect { |p| [ p.name, p.id] }, include_blank: false %>
+   <%= link_to "Add Color", new_color_path %>
   </div>
 
   <div class="actions">
